@@ -6,24 +6,15 @@ const HomeHeader = () => {
     <View style={styles.container}>
 
         <View style={styles.header}>
-
-            <View>
+            <View style={styles.userInfo}>
                 <Text style={styles.title}>Eric Atsu</Text>
                 <Text style={styles.subtitle}>eric@gmail.com</Text>
             </View>
 
-            <View style={styles.profileView}>
-                <Image style={styles.profilePicture}
+            <Image style={styles.profilePicture}
                 source={require('../../assets/profile.png')}
-                />
-            </View>
-
-            
-
+            />  
         </View>
-
-        
-    
       
     </View>
     
@@ -33,11 +24,13 @@ const HomeHeader = () => {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 80,
-    paddingLeft: 30,
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-evenly'
+  },
+  userInfo: {
+    paddingRight: 150,
   },
   title: {
     fontSize: 24,
