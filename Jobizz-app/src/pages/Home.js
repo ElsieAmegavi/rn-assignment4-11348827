@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import HomeHeader from '../components/HomeHeader';
 import SearchBar from '../components/SearchBar';
 import FeaturedJobs from '../components/FeaturedJobs';

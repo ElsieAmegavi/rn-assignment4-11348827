@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     textAlign: 'left',
   },
   subtitle: {
-    // paddingTop: 5,
     fontSize: 20,
     color: 'grey',
   },
@@ -48,7 +47,6 @@ const styles = StyleSheet.create({
   profilePicture: {
     height: 50,
     width: 50,
-    // paddingTop: '100'
   },
 });
 

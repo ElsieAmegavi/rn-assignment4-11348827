@@ -12,6 +12,7 @@ const PopularJobs = () => {
     { id: '5', title: 'Apple Developer', company: 'Apple', salary: "$170,00/y", location: "Accra, Ghana", image: require('../../assets/apple.png') },
     { id: '6', title: 'Sales Manager', company: 'Burger King', salary: "$140,00/y", location: "Accra, Ghana", image: require('../../assets/burger-king.png') },
     { id: '7', title: 'Apple Sn Developer', company: 'Apple', salary: "$170,00/y", location: "Accra, Ghana", image: require('../../assets/apple.png') },
+    { id: '8', title: 'Apple Jn Developer', company: 'Apple', salary: "$170,00/y", location: "Accra, Ghana", image: require('../../assets/apple.png') },
 
   ];
 
@@ -29,23 +30,19 @@ const PopularJobs = () => {
         {jobsData.map((job, index) => (
           <View key={index} style={styles.jobView}>
             
-            {/* Overall */}
             <View style={styles.jobSection}>
 
-              {/* Image and Job title & company */}
               <View style={styles.jobImageAndTitle}>
                 <Image
                   style={styles.jobImage} 
                   source={job.image}/>
 
-                {/* Job title & company */}
                 <View style={styles.jobTitleSection}>
                   <Text style={styles.jobTitle}>{job.title}</Text>
                   <Text style={styles.company}>{job.company}</Text>      
                 </View>
               </View>
 
-              {/* Job salary & location */}
               <View style={styles.jobSalaryLocationSection}>
                   <Text style={styles.jobTitle}>{job.salary}</Text>
                   <Text style={styles.company}>{job.location}</Text>      

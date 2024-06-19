@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, TextInput, StyleSheet, Button, TouchableOpacity, Image } from 'react-native';
-import { Ionicons } from '@expo/vector-icons'; // Make sure to install @expo/vector-icons
+import { View, TextInput, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 
 const SearchBar = () => {
@@ -11,7 +11,7 @@ const SearchBar = () => {
         <Ionicons name="search-outline" size={25} color="black" style={styles.searchIcon} />
         <TextInput
           style={styles.searchInput}
-          placeholder="Search"
+          placeholder="Search job or position"
           placeholderTextColor="#888"
         />
       </View>
@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
     marginRight: 10,
     borderRadius: 14,
     height: 50,
-    // width: "80%"
   },
   searchIcon: {
     marginRight: 10,
@@ -54,8 +53,6 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingVertical: 8,
     paddingHorizontal: 5,
-    // backgroundColor: '#FBF9F7',
-    // color: '#424242',
     borderRadius: 14,
   },
   buttonContainer: {
